@@ -31,8 +31,8 @@ const CardProps = [
 export function CardSection() {
   return (
     <section className="flex flex-col gap-5 justify-center items-center m-10">
-        {CardProps.map((p, index) => (
-            <Card key={index} cardImg={p.cardImg} title={p.title} paragrafo={p.paragrafo} botao={p.botao}/>
+        {CardProps.map((props, index) => (
+            <Card key={index} cardImg={props.cardImg} title={props.title} paragrafo={props.paragrafo} botao={props.botao}/>
         ))}
     </section>
 
