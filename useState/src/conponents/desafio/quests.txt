@@ -1,0 +1,35 @@
+✅ Verifique se o array users[0].skills contém "React"
+✅ Verifique se algum usuário tem menos de 23 anos
+✅ Verifique se existe algum administrador que saiba "TypeScript"
+✅ Verifique se todos os usuários têm mais de 18 anos
+✅ Verifique se todos os usuários possuem pelo menos uma skill
+✅ Verifique se todos os admins tem mais de 30 anos
+✅ Encontre o primeiro usuário com o nome "Carla"
+✅ Encontre o primeiro usuário que tenha "JavaScript" entre suas skills
+✅ Filtre todos os usuários que não são administradores
+✅ Filtre todos os usuários que têm mais de 25 anos e sabem "JavaScript"
+✅ Mapeie os usuários trazendo apenas os nomes dos usuários
+
+
+🧩 Tabela prática dos métodos de array mais usados
+| Método            | Pergunta mental que você deve se fazer                  | O que ele faz                               | Retorna                               | Exemplo                                    |
+| ----------------- | ------------------------------------------------------- | ------------------------------------------- | ------------------------------------- | ------------------------------------------ |
+| **`find()`**      | “Quero o **primeiro elemento** que cumpre a condição?”  | Busca o **primeiro** item que satisfaz algo | O próprio **objeto** (ou `undefined`) | `users.find(u => u.age > 30)`              |
+| **`findIndex()`** | “Quero o **índice** do primeiro que cumpre a condição?” | Igual ao `find`, mas retorna o índice       | Número ou `-1`                        | `users.findIndex(u => u.age > 30)`         |
+| **`filter()`**    | “Quero **todos** os que cumprem a condição?”            | Filtra o array com base em uma regra        | Novo **array**                        | `users.filter(u => u.isAdmin)`             |
+| **`some()`**      | “Existe **algum** elemento que cumpre a condição?”      | Verifica se pelo menos **1** atende         | `true` / `false`                      | `users.some(u => u.age < 18)`              |
+| **`every()`**     | “**Todos** cumprem a condição?”                         | Só retorna `true` se **todos** atenderem    | `true` / `false`                      | `users.every(u => u.age > 18)`             |
+| **`map()`**       | “Quero **transformar** cada item em outra coisa?”       | Cria novo array com base nos valores        | Novo **array transformado**           | `users.map(u => u.name)`                   |
+| **`reduce()`**    | “Quero **acumular** um resultado (somar, contar, etc)?” | Reduz o array a **um valor único**          | Número, string, obj, etc.             | `users.reduce((acc, u) => acc + u.age, 0)` |
+
+💡 Dica mental fácil pra lembrar:
+
+Algum? → some
+Todos? → every
+Primeiro que... ? → find
+Todos que... ? → filter
+Modificar todos? → map
+Juntar tudo em um só valor? → reduce
+Esse item está dentro? → includes
+
+lei de kidin? kkk
