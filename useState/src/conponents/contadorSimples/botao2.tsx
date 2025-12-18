@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Button } from "../ui/button";
 
 export default function Botao2(){
     const [inicial, setInicial] = useState(0);
