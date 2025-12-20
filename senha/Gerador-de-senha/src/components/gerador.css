@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #0f172a;
+  color: #e5e7eb;
+}
+
+/* Container */
+div {
+  max-width: 400px;
+  margin: 80px auto;
+  padding: 24px;
+  background-color: #020617;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Título */
+h1 {
+  margin-bottom: 24px;
+  font-size: 1.5rem;
+}
+
+/* Botões */
+button {
+  margin: 6px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #2563eb;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+}
+
+/* Senha gerada */
+div > div {
+  
+  margin-top: 20px;
+  padding: 24px;
+  background-color: #020617;
+  border: 1px solid #334155;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  word-break: break-all;
+}
