@@ -8,7 +8,7 @@ export function Input({ passwordSize, setPasswordSize }: PasswordSize) {
       id="passwordSize"
       min={1}
       value={passwordSize}
-      onChange={(ev) => setPasswordSize(parseInt(ev.target.value))}
+      onChange={(ev) => setPasswordSize(+ev.target.value)}
     />
   );
 }
